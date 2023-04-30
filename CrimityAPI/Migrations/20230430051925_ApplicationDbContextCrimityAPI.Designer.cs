@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CrimityAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230412084927_createTableUsuario")]
-    partial class createTableUsuario
+    [Migration("20230430051925_ApplicationDbContextCrimityAPI")]
+    partial class ApplicationDbContextCrimityAPI
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,10 +32,6 @@ namespace CrimityAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreUsuario")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

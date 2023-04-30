@@ -63,7 +63,7 @@ namespace CrimityAPI.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Registro([FromBody] UsuarioRegistroDto usuarioRegistroDto)
         {
-            bool validarNombreUsuarioUnico = _usRepo.IsUniqueUser(usuarioRegistroDto.NombreUsuario);
+            bool validarNombreUsuarioUnico = _usRepo.IsUniqueUser(usuarioRegistroDto.email);
             if (!validarNombreUsuarioUnico)
             {
                 _respuestaApi.StatusCode = HttpStatusCode.BadRequest;

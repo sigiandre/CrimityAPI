@@ -6,6 +6,7 @@ C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\CrimityAPI.runtime
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\CrimityAPI.dll
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\CrimityAPI.pdb
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\Microsoft.Practices.ServiceLocation.dll
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\Humanizer.dll
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -74,4 +75,3 @@ C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\obj\Debug\net6.0\refint\CrimityAPI.
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\obj\Debug\net6.0\CrimityAPI.pdb
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\obj\Debug\net6.0\CrimityAPI.genruntimeconfig.cache
 C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\obj\Debug\net6.0\ref\CrimityAPI.dll
-C:\Users\andre\Desktop\CrimityAPI\CrimityAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

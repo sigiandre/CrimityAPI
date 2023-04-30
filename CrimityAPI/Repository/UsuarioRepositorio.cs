@@ -29,12 +29,12 @@ namespace CrimityAPI.Repository
 
         public ICollection<Usuario> GetUsuarios()
         {
-            return _db.Usuarios.OrderBy(u => u.NombreUsuario).ToList();
+            return _db.Usuarios.OrderBy(u => u.email).ToList();
         }
 
         public bool IsUniqueUser(string usuario)
         {
-            var usuariobd = _db.Usuarios.FirstOrDefault(u => u.NombreUsuario == usuario);
+            var usuariobd = _db.Usuarios.FirstOrDefault(u => u.email == usuario);
             if (usuariobd == null)
             {
                 return true;
@@ -48,7 +48,6 @@ namespace CrimityAPI.Repository
 
             Usuario usuario = new Usuario
             {
-                NombreUsuario = usuarioRegistroDto.NombreUsuario,
                 Nombre = usuarioRegistroDto.Nombre,
                 email = usuarioRegistroDto.email,
                 telefono = usuarioRegistroDto.telefono,
@@ -65,7 +64,7 @@ namespace CrimityAPI.Repository
         {
             var passwordEncriptado = obtenermd5(usuarioLoginDto.Password);
             var usuario = _db.Usuarios.FirstOrDefault(
-                u => u.NombreUsuario.ToLower() == usuarioLoginDto.NombreUsuario.ToLower()
+                u => u.email.ToLower() == usuarioLoginDto.email.ToLower()
                 && u.Password == passwordEncriptado
                 );
 
@@ -87,7 +86,7 @@ namespace CrimityAPI.Repository
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, usuario.NombreUsuario.ToString()),
+                    new Claim(ClaimTypes.Name, usuario.email.ToString()),
                     new Claim(ClaimTypes.Role, usuario.Role)
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),

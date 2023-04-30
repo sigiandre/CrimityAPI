@@ -4,7 +4,7 @@
 
 namespace CrimityAPI.Migrations
 {
-    public partial class createTableUsuario : Migration
+    public partial class ApplicationDbContextCrimityAPI : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,6 @@ namespace CrimityAPI.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NombreUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
